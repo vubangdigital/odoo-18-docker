@@ -31,6 +31,7 @@ services:
       #- /etc/localtime:/etc/localtime:ro
       - ./entrypoint.sh:/entrypoint.sh
       - ./addons:/mnt/extra-addons
+      - ./enterprise:/mnt/enterprise-addons
       - ./etc:/etc/odoo
     restart: always             # run as a service
     
